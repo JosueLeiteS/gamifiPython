@@ -1,0 +1,162 @@
+<div fxLayoutAlign="center center" fxFlexFill class="main-div">
+  <mat-card fxFlex="90">
+    <div fxLayout="column" fxLayoutAlign="space-evenly stretch">
+      <mat-toolbar color="primary">Modulo 1</mat-toolbar>
+
+      <mat-tab-group>
+        <mat-tab label="Sintaxis">
+          <h2>Hablando con una maquina</h2>
+          <mat-divider></mat-divider>
+          <div>
+
+            Entender como una maquina nos acaba entendiendo puede llegar a ser algo confuso. Pero al entender el
+            lenguaje
+            que habla una computadora esto se vuelve muy simple!<br>
+            <br>
+            <img [src]="img1" />
+            <br>
+            <br>
+            Como en cualquier lenguaje humano, este sigue sus propias reglas y <span>sintaxis</span> para escribirse de
+            manera
+            correcta! Una de las mas importantes es la <span>indentacion</span>. <br>
+            <br>
+            La identacion es el espacion que existe entre el codigo y el inicio de la linea. Usualmente esto es una
+            buena practica en la programacion
+            para organizar el codigo pero en Python <span>la indentacion es completamente necesaria</span><br>
+
+            Veamos unos ejemplos<br>
+            <pre><code>
+if 2 > 1:
+print("Uno es mayor que dos.")</code></pre>
+            <pre><code>
+if 2 > 1:
+  print("Uno es mayor que dos, pero indentado!.")</code></pre>
+            El texto y las ordenes son exactamente iguales. Pero Python lee estos dos ejemplos de maneras
+            <span>completamente diferentes</span>.
+            El lenguaje, al intentar comprender lo que le estamos diciendo, <span>necesita</span> las indentaciones para
+            entender que una parte del codigo depende de otra anterior.
+          </div>
+          <mat-divider></mat-divider>
+
+        </mat-tab>
+        <mat-tab label="Variables">
+          <h2>Entre textos y numeros</h2>
+          <mat-divider></mat-divider>
+          <div>
+            Las variables se pueden entender como <span>cajas</span>, cada una guardando <span>informacion</span> bajo
+            un <span>nombre unico</span>.
+            <br>
+            <img [src]="img2">
+            <br>
+            <br>
+            Y en codigo se veria asi:
+            <pre><code>
+x = 4
+y = 2.5
+q = "hello"
+z = "a"</code></pre>
+            Estas variables son diferentes, pero todas tienen un sentido para Python.<br>
+            x es un <span>int</span> el cual guarda <span>numeros enteros</span>.<br>
+            y es un <span>float</span> que tambien guarda numeros! <span>Pero permite los decimales</span>. Estos
+            <span>tienen</span> que estar separados con un <span>punto.</span>!<br>
+            q es un <span>str</span> o mejor conocido como string. Aun que este paresca solo texto, en
+            realida es un <span>hilo de caracteres</span>.<br>
+            Y finalmente z es un <span>str</span> aun que solo guarde <span>un solo caracter de teclado</span>. En otros
+            lenguajes z seria de tipo <span>char</span>, pero Python no utiliza este tipo.<br>
+            Estas variables son usadas en diferentes operaciones respectivas para sus tipos. Los <span>numeros</span> en
+            operaciones <span>aritmeticas</span> y los <span>textos</span> en operaciones de <span>edicion y
+              escritura</span>.
+          </div>
+
+          <br>
+
+          <h2>Respuestas logicas</h2>
+          <mat-divider></mat-divider>
+          <div>
+            Ademas, Python toma uso de un tipo de datos mas abstracto, el <span>booleano</span> o <span>bool</span>
+            el cual es una <span>respuesta logica</span>!<br>
+            Esta es una de <span>las primeras variables</span> en todos los lenguajes de programacion, y representa el
+            estado de un solo valor <span>verdadero</span> o <span>falso</span>.
+            <br>
+            <img [src]="img3">
+            <br>
+            <br>
+            En el codigo seria:
+            <pre><code>
+verdad = true
+falso = false</code></pre>
+            Y asi de simple es este tipo de variable. Los valoes <span>true</span> o <span>false</span> son usados para
+            <span>operaciones logicas</span> dentro de el funcionamiento de Python. Estas las veremos luego en el
+            siguiente segmento.
+          </div>
+
+        </mat-tab>
+        <mat-tab label="Operadores">
+          <h2>Operadores y herramientas</h2>
+          <mat-divider></mat-divider>
+          <div>
+
+            Python contiene una gran cantidad de operadores, diferentes herramientas que el lenguaje nos brinda.<br>
+            <br>
+            <h2>Operadores Aritmeticos</h2>
+            <mat-divider></mat-divider>
+
+            Los <span>operadoes aritmeticos</span> son todos los operadores que se puedan usar con <span>valores
+              numericos</span>.<br>
+            Python brinda todos los operadores aritmeticos tradicionales y adicional a esto se presentan operadores
+            no tan conocidos que son utiles en temas de programacion.
+            <br>
+            <br>
+            + | Suma | 5 + 2 = 7 <br>
+            - | Resta | 5 - 2 = 3 <br>
+            * | Multiplicacion | 5 * 2 = 10 <br>
+            / | Division | 5 / 2 = 2.5 <br>
+            % | Modulo o Resto | 5 % 2 = 5 <br>
+            ** | Exponente | 5 ** 2 = 25 <br>
+            // | Division baja | 5 // 2 = 2 <br>
+
+            <h2>Operadoes Lógicos</h2>
+            <mat-divider></mat-divider>
+
+            Los <span>operadores logicos</span> son aquellos usados principalmente con las <span>variables
+              booleanas</span>.<br>
+            Entre estos existen las regulares expresiones de <span>comparacion de valores numericos</span> al igual que
+            los conectores logicos <span> and, or y not</span>.<br>
+            <pre><code>
+if (booleanUno and booleanDos)
+  print("booleanUno y booleanDos son ambos valores booleanos verdaderos!")
+
+if (not booleanTres)
+  print("booleanTres no es verdadero!")
+
+if (2 <= 10)
+  print("Dos es menor o igual que diez!")</code></pre>
+          </div>
+        </mat-tab>
+        <mat-tab label="Tabla de puntuaciones">
+          <mat-card>
+            <table class="table table-stripped">
+              <thead class="table-dark">
+                <tr>
+                  <th>Nombre</th>
+                  <th>Puntuacion</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let entry of leaderboardEntries">
+                  <td> {{entry.leaderboardEntryStudentName}}</td>
+                  <td> {{entry.leaderboardEntryScore}} </td>
+                </tr>
+              </tbody>
+            </table>
+          </mat-card>
+        </mat-tab>
+      </mat-tab-group>
+    </div>
+    <br>
+    <div fxLayout="row" fxLayoutAlign=" start">
+      <button (click)="toMain()" mat-raised-button color="warn">Volver al Menú</button>
+      <button (click)="toExam()" mat-raised-button color="accent">Intentar el Examen</button>
+    </div>
+  </mat-card>
+</div>

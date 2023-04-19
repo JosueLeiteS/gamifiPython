@@ -1,0 +1,103 @@
+<!--
+<div fxLayoutAlign="center center" fxFlexFill class="main-div">
+  <mat-card fxFlex="90">
+    <div fxLayout="column" fxLayoutAlign="space-evenly stretch">
+      <mat-toolbar color="primary">Modulo 1</mat-toolbar>
+
+      <mat-tab-group>
+        <mat-tab label="Sintaxis">
+          <h2>La sintaxis de Python</h2>
+          <mat-divider></mat-divider>
+          <div>
+
+            La sintaxis se considera como un modelo de orden de elementos en referencia a un estándar. En el lenguaje de
+            programación Python esta dicta como se estructura el código.<br>
+            <br>
+            Indentación<br>
+            La indentación es la división de espacio a la izquierda que cada línea de código puede tener, usualmente
+            utilizada para organizar el código visualmente. A diferencia de otros lenguajes de programación, Python
+            depende de la indentación para ejecutar el código de manera correcta, haciendo uso del concepto para separar
+            los diferentes bloques de código. Por ejemplo el siguiente codigo:<br>
+            <pre><code>
+if 2 > 1:
+  print("Uno es mayor que dos.")</code></pre>
+            El siguiente codigo implementa la indentacion para funcionar en Python. La indentacion permite que el
+            programa entienda que la segunda linea de codigo esta adentro del elemento "if" de la primera.
+          </div>
+          <mat-divider></mat-divider>
+
+        </mat-tab>
+        <mat-tab label="Variables">
+          <h2>Variables y tipos</h2>
+          <mat-divider></mat-divider>
+          <div>
+            Las variables son elementos que permiten almacenar múltiples datos para volver a utilizarlos en operaciones
+            futuras. En Python estas no necesitan tener un tipo definido, pues el código comprenderá el tipo de variable
+            cuando sean inicializadas. <br>
+            <pre><code>
+x = 12
+y = "Hola mundo"
+z = true</code></pre>
+            En el ejemplo de código ambas variables son de tipos diferentes. X es de tipo int, que indica valores
+            Numéricos. y es de tipo str, o string, el cual representa una lista de caracteres que conforman una línea de
+            texto. Finalmente, z pertenece al tipo bool o boolean la cual representa tipos de datos logísticos.<br>
+            Los nombres de las variables no pueden iniciar con números, tener espacios o caracteres especiales, como por
+            ejemplo, '-'<br>
+          </div>
+        </mat-tab>
+        <mat-tab label="Operadores">
+          <h2>Title 3</h2>
+          <mat-divider></mat-divider>
+          <div>
+
+            Python contiene una gran cantidad de operadores, a continuación se resaltarán principalmente los operadores
+            aritméticos y lógicos.<br>
+            <br>
+            Operadores Aritméticos<br>
+
+            Estos son todos los operadores usados en cálculos aritméticos tradicionales. En adición a los símbolos
+            usuales para la realización de operaciones básicas, Python también toma uso de los símbolos ** para
+            potenciación, // para división redondeada y % para módulo.<br>
+            <br>
+            Operadoes Lógicos<br>
+            Los operadores lógicos son una extensa lista de elementos utilizados para asignación, comparación o unión
+            lógica entre argumentos. Adicional a los operadores principales "=, <,>" también se da uso a las oraciones
+              en inglés "not", "and" y "or" para la combinación de diversos argumentos lógicos.<br>
+              <br>
+              La condición if<br>
+              La condición lógica if permite realizar un bloque de código indentado que le sigue si es que se cumple la
+              condición presente entre paréntesis. La estructura de esta condición puede ser observada en un ejemplo
+              antes visto:<br>
+              <pre><code>
+if 2 > 1:
+  print("Uno es mayor que dos.")</code></pre>
+          </div>
+        </mat-tab>
+        <mat-tab label="Tabla de puntuaciones">
+          <mat-card>
+            <table class="table table-stripped">
+              <thead class="table-dark">
+                <tr>
+                  <th>Nombre</th>
+                  <th>Puntuacion</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let entry of leaderboardEntries">
+                  <td> {{entry.leaderboardEntryStudentName}}</td>
+                  <td> {{entry.leaderboardEntryScore}} </td>
+                </tr>
+              </tbody>
+            </table>
+          </mat-card>
+        </mat-tab>
+      </mat-tab-group>
+    </div>
+    <br>
+    <div fxLayout="row" fxLayoutAlign=" start">
+      <button (click)="toMain()" mat-raised-button color="warn">Volver al Menú</button>
+      <button (click)="toExam()" mat-raised-button color="accent">Intentar el Examen</button>
+    </div>
+  </mat-card>
+</div>
+ -->

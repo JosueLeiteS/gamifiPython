@@ -1,0 +1,9 @@
+img {
+  height: auto;
+  width: auto;
+  max-width: 50%;
+  max-height: 15%;
+}
+span {
+  color: red;
+}

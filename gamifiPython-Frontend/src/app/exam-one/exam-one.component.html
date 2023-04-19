@@ -1,0 +1,112 @@
+<div class="overflow-auto">
+  <div fxLayoutAlign="center center" fxFlexFill class="overflow-auto">
+    <mat-card fxFlex>
+      <div fxLayout="column" fxLayoutAlign="space-evenly stretch">
+        <mat-toolbar color="primary">Examen 1</mat-toolbar>
+        <form [formGroup]="examForm">
+
+          <div>
+            <h2>Pregunta 1</h2>
+            <mat-divider></mat-divider>
+            <h4>
+              ¿Es la siguiente afirmación correcta? <br>
+              La ejecución de código en Python no necesita una correcta indentación para el funcionamiento del código,
+              esta
+              solo existe para facilitar la lectura del código.
+            </h4>
+            <mat-form-field appearance="fill">
+              <mat-label>Respuesta</mat-label>
+              <mat-select formControlName="p1">
+                <mat-option value="1">Verdadero</mat-option>
+                <mat-option value="2">Falso</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+
+          <div>
+            <h2>Pregunta 2</h2>
+            <mat-divider></mat-divider>
+            <h4>
+              Que funcion se necesitaria dentro de los corchetes para imprimir "Hello World" en la consola.
+            </h4>
+            <pre><code>
+[    ]("Hello World")</code></pre>
+            <mat-form-field appearance="fill">
+              <mat-label>Respuesta</mat-label>
+              <mat-select formControlName="p2">
+                <mat-option value="1">type</mat-option>
+                <mat-option value="2">console.log</mat-option>
+                <mat-option value="3">print</mat-option>
+                <mat-option value="4">write</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+
+          <div>
+            <h2>Pregunta 3</h2>
+            <mat-divider></mat-divider>
+            <h4>
+              ¿Funcionará el siguiente segmento de código de manera correcta?
+            </h4>
+            <pre><code>
+if 10 > 2:
+print("Diez es mayor que dos!")</code></pre>
+            <mat-form-field appearance="fill">
+              <mat-label>Respuesta</mat-label>
+              <mat-select formControlName="p3">
+                <mat-option value="1">Si</mat-option>
+                <mat-option value="2">No</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+
+          <div>
+            <h2>Pregunta 4</h2>
+            <mat-divider></mat-divider>
+            <h4>
+              El siguiente código imprime el tipo de dato de "X". ¿Qué tipo se imprimiría?
+            </h4>
+            <pre><code>
+x = false
+print(type(x))</code></pre>
+            <mat-form-field appearance="fill">
+              <mat-label>Respuesta</mat-label>
+              <mat-select formControlName="p4">
+                <mat-option value="1">Logico - bool</mat-option>
+                <mat-option value="2">Texto - str</mat-option>
+                <mat-option value="3">Numerico - int</mat-option>
+                <mat-option value="4">Otro</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+
+
+          <div>
+            <h2>Pregunta 5</h2>
+            <mat-divider></mat-divider>
+            <h4>
+              Que funciones se necesitarian dentro de los corchetes para imprimir "Hello World" en la consola.
+            </h4>
+            <pre><code>
+a = 50
+b = 10
+[          ]:
+  print("Hello World")</code></pre>
+            <mat-form-field appearance="fill">
+              <mat-label>Respuesta</mat-label>
+              <mat-select formControlName="p5">
+                <mat-option value="1">when a < b</mat-option>
+                    <mat-option value="2">if a < b</mat-option>
+                        <mat-option value="3">check a == b</mat-option>
+                        <mat-option value="4">if a > b</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+
+          <button mat-raised-button (click)="finishExam()" [disabled]="examForm.invalid" color="primary">Acabar
+            Examen</button>
+        </form>
+      </div>
+    </mat-card>
+  </div>
+</div>

@@ -1,0 +1,17 @@
+<div fxLayoutAlign="center center" fxFlexFill class="main-div">
+  <mat-card fxFlex="35">
+    <mat-toolbar color="primary">Ingreso de datos</mat-toolbar>
+    <form (ngSubmit)="studentLogin()" fxLayoutAlign="stretch" fxLayout="column" class="login-form">
+      <mat-form-field>
+        <mat-label>Email de estudiante</mat-label>
+        <input matInput [(ngModel)]="student.email" placeholder="ID" id="email" name="email">
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Clave de acceso</mat-label>
+        <input matInput type="password" [(ngModel)]="student.pass" placeholder="Clave" id="pass" name="pass">
+      </mat-form-field>
+      <button mat-raised-button type="submit" color="primary">Login</button>
+    </form>
+
+  </mat-card>
+</div>
